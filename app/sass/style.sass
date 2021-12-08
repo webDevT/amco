@@ -1,0 +1,212 @@
+@import "vars"
+@import "fonts"
+
+//start global style
+body
+	min-height: 100vh
+	background: url('../img/bg.png')
+	background-size: cover
+	background-position: center
+	font-family: $campton
+	font-weight: 500
+.container 
+	width: 89.219vw
+	margin: 0 auto
+a,
+a:hover 
+	text-decoration: none
+//end global style
+
+//start header style
+.header 
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	padding-top: 2.083vw
+	.container 
+		width: 89.219vw
+		
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+.logo
+	img 
+		width: 11.875vw
+.menu-btn__row
+	width: 2.804vw
+	height: 0.271vw
+	background: #fff
+	margin-bottom: 0.452vw
+	transition: all 0.3s
+.menu-btn
+	cursor: pointer
+	z-index: 999
+.menu-btn__row:last-child 
+	margin-bottom: 0
+//end header style
+
+//start home-content style
+.home-content 
+	padding-top: 20vw
+	padding-bottom: 10vw
+	color: #fff
+	.container 
+		display: flex
+		justify-content: space-between
+.page-count
+	font-size: 1.875vw
+	font-family: $pn
+	font-weight: 700
+	color: $yellow
+.current-page
+	font-size: 3.229vw
+	color: #fff
+	padding-bottom: 1vw
+	border-bottom: 0.365vw solid #fff
+	margin-right: 1.406vw
+.page-navigation
+	display: flex
+	align-items: center
+.prev-page 
+	margin-right: 0.521vw
+.prev-page
+	width: 3.229vw
+	height: 3.229vw
+	border: 2px solid #fff
+	border-radius: 50%
+	display: flex
+	justify-content: center
+	align-items: center
+	cursor: pointer
+.next-page
+	width: 4.219vw
+	height: 4.219vw
+	display: flex
+	justify-content: center
+	align-items: center
+	border: 2px solid $yellow
+	border-radius: 50%
+.home-content__wrapper
+	display: flex
+	.button
+		margin-top: 2.083vw
+.home-content__text
+	margin-left: 4.375vw 
+.sub-title
+	letter-spacing: 0.285em
+	font-size: 1.042vw
+	margin-bottom: 0.313vw
+	span 
+		color: $yellow
+.h1 
+	text-transform: capitalize
+	font-size: 4.167vw
+	letter-spacing: -0.06em
+	line-height: 111.86%
+	margin-bottom: 0
+	margin-top: 0
+.button
+	background: linear-gradient(89.8deg, #D98B00 0.12%, #FFA400 101.39%)
+	box-shadow: 0px 1.563vw 2.604vw 0.104vw rgba(255, 164, 0, 0.3)
+	border-radius: 5.208vw
+	color: #fff
+	font-size: 1.042vw
+	font-weight: 600
+	letter-spacing: 0.285em
+	padding: 1.4vw 4.8vw
+	box-sizing: border-box	
+	display: inline-block
+
+//end home content style
+
+//start menu style
+ul 
+	list-style:  none
+	padding: 0 
+	margin: 0
+
+.menu 
+	background: #000 
+	position: fixed 
+	top: 0 
+	right: 0
+	height: 100vh
+	color: #fff
+	z-index: 998
+	font-weight: 600
+	transform: translateX(100%)
+	transition: all 0.5s
+	ul 
+		height: 100% 
+		display: flex
+		justify-content: center
+		flex-direction: column
+		li
+			width: 28vw
+.menu.active
+	transform: translateX(0%)
+.menu-link 
+	font-size: 1.8vw	
+	color: #fff
+	text-transform: none
+	
+	display: block
+	padding: 1.5vw 0vw
+	margin: 0 4vw
+.menu-link--sub,
+.menu-link--sub-sub
+	position: relative
+.menu-link--sub:before,
+.menu-link--sub-sub:before
+	content: "<"
+	position: absolute
+	left: 0 
+	top: 50%
+	transform: translateY(-50%) translateX(-200%)
+	color: $yellow
+.menu .sub-menu,
+.menu .sub-sub-menu
+	background: #000
+	
+	position: fixed
+	right: 28vw
+	top: 0
+	transition: all 0.8s
+	overflow: hidden
+	//display: none
+	width: 0
+.menu .sub-menu
+	transition-delay: 0.8s
+.menu .sub-sub-menu
+	transition-delay: 0s
+.menu .sub-sub-menu
+	right: 56vw
+
+.sub-menu-item .sub-menu.active
+	//display: flex
+	width: 28vw
+	border-right: 1px solid $yellow
+.sub-sub-menu-item .sub-sub-menu.active 
+	width: 28vw
+	border-right: 1px solid $yellow
+
+.sub-menu-item
+	position: relative
+.menu-btn.active
+	.menu-btn__row:last-child 
+		display: none
+	.menu-btn__row:first-child 
+		transform: rotate(45deg)
+	.menu-btn__row:nth-child(2) 
+		transform: rotate(-45deg)
+		position: relative
+		top: -0.7vw
+
+//end menu style
+
+@import "media"
+
+
+

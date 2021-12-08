@@ -1,0 +1,215 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.header 
+		padding-top: 2.5vw
+	.logo
+		img 
+			width: 17vw
+	.menu-btn__row
+		width: 5vw
+		height: 0.5vw
+		margin-bottom: 1vw
+	.home-content
+		.container
+			flex-direction: column
+	.page-count
+		align-self: center
+		margin-top: 5vw
+	.h1 
+		font-size: 9vw
+	.sub-title
+		font-size: 3vw
+	.button
+		padding: 3vw 8vw
+		font-size: 2.5vw
+	.home-content__wrapper .button
+		margin-top: 5vw
+	.next-page
+		width: 8vw
+		height: 8vw
+	.prev-page
+		width: 5vw
+		height: 5vw
+		margin-right: 1.5vw
+	.page-count
+		font-size: 4vw
+	.current-page
+		font-size: 7vw
+	.menu ul li
+		width: 33vw
+	.menu .sub-menu,
+	.menu .sub-sub-menu
+		background: #000
+	
+		position: fixed
+		right: 33vw
+		top: 0
+		transition: all 0.8s
+		overflow: hidden
+		//display: none
+		width: 0
+	.menu .sub-menu
+		transition-delay: 0.8s
+	.menu .sub-sub-menu
+		transition-delay: 0s
+	.menu .sub-sub-menu
+		right: 66vw
+
+	.sub-menu-item .sub-menu.active
+		//display: flex
+		width: 33vw
+		border-right: 1px solid $yellow
+	.sub-sub-menu-item .sub-sub-menu.active 
+		width: 33vw
+		border-right: 1px solid $yellow
+	.menu-link
+		font-size: 2.4vw
+		margin-left: 6vw
+		margin-right: 1vw
+		padding: 2vw 0vw
+	.menu-btn.active .menu-btn__row:nth-child(2)
+		top: -1.5vw
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.header 
+		padding-top: 5vw
+	.logo
+		img 
+			width: 33vw
+	.menu-btn__row
+		width: 10vw
+		height: 1vw
+		margin-bottom: 2vw
+	.menu .sub-menu,
+	.menu .sub-sub-menu
+		position: static
+		width: 100%
+		height: 0
+		transition: all 0.5s 
+		transition-delay: 0
+		padding-left: 8vw
+	.menu .sub-menu.active,
+	.menu .sub-sub-menu.active  
+		height: auto
+		border-right: none
+	.menu ul li
+		width: 100vw
+	.menu-link
+		font-size: 6vw
+		padding: 4vw 0
+	.sub-menu-item .sub-menu.active
+		width: 100%
+	.sub-sub-menu-item .sub-sub-menu.active
+		width: 100%
+	.menu-link--sub:before,
+	.menu-link--sub-sub:before
+		display: none
+	.menu-link--sub:after,
+	.menu-link--sub-sub:after
+		content: '>'
+		position: absolute 
+		right: -5vw 
+		color: $yellow
+		top: 50%
+		transform: translateY(-50%)
+	.menu-link--sub,
+	.menu-link--sub-sub
+		display: inline-block
+	.menu ul
+		justify-content: flex-start
+	.menu 
+		overflow-y: auto
+		overflow-x: hidden
+		height: 80vh
+		padding-top: 20vw
+	.menu-btn.active .menu-btn__row:nth-child(2)
+		top: -3vw
+
+	
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 575px)
+	/**/
+	.home-content__wrapper
+		flex-direction: column
+	.home-content__text
+		margin-left: 0
+		order: 1
+	.page-navigation
+		order: 2
+		margin-top: 5vw
+	.home-content
+		padding-top: 40vw
+	.h1 
+		font-size: 12vw
+	.sub-title
+		font-size: 4vw
+	.home-content__wrapper .button
+		font-size: 3.2vw
+	.button
+		padding: 4vw 10vw
+		border-radius: 10vw
+	.prev-page
+		width: 8vw
+		height: 8vw
+	.next-page
+		width: 12vw
+		height: 12vw
+	.page-navigation
+		margin-top: 10vw
+	.page-count
+		margin-top: 10vw
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+
+
+
