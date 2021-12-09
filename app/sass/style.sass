@@ -9,6 +9,7 @@ body
 	background-position: center
 	font-family: $campton
 	font-weight: 500
+	box-sizing: border-box
 .container 
 	width: 89.219vw
 	margin: 0 auto
@@ -33,13 +34,14 @@ a:hover
 
 .logo
 	img 
-		width: 11.875vw
+		width: 5.573vw
 .menu-btn__row
-	width: 2.804vw
-	height: 0.271vw
+	width: 1.875vw
+	height: 0.234vw
 	background: #fff
-	margin-bottom: 0.452vw
+	margin-bottom: 0.313vw
 	transition: all 0.3s
+	border-radius: 1vw
 .menu-btn
 	cursor: pointer
 	z-index: 999
@@ -49,7 +51,7 @@ a:hover
 
 //start home-content style
 .home-content 
-	padding-top: 20vw
+	padding-top: 23vw
 	padding-bottom: 10vw
 	color: #fff
 	.container 
@@ -90,10 +92,13 @@ a:hover
 	border-radius: 50%
 .home-content__wrapper
 	display: flex
+	align-items: flex-start
 	.button
-		margin-top: 2.083vw
+		margin-top: 3.8vw
 .home-content__text
 	margin-left: 4.375vw 
+	.h1 
+
 .sub-title
 	letter-spacing: 0.285em
 	font-size: 1.042vw
@@ -107,6 +112,10 @@ a:hover
 	line-height: 111.86%
 	margin-bottom: 0
 	margin-top: 0
+	font-weight: 500
+	font-family: $campton
+	span 
+		font-weight: 300
 .button
 	background: linear-gradient(89.8deg, #D98B00 0.12%, #FFA400 101.39%)
 	box-shadow: 0px 1.563vw 2.604vw 0.104vw rgba(255, 164, 0, 0.3)
@@ -202,9 +211,133 @@ ul
 	.menu-btn__row:nth-child(2) 
 		transform: rotate(-45deg)
 		position: relative
-		top: -0.7vw
+		top: -0.55vw
 
 //end menu style
+
+//start contact style
+.contact
+	padding-top: 8vw
+	color: #fff
+	padding-bottom: 4.792vw
+	.container 
+		display: flex
+		justify-content: space-between
+.contact-form 
+	width: 56.094vw
+	background: rgba(48, 48, 48, 0.5)
+	border-radius: 1.042vw
+	min-height: 38vw
+	padding: 3.750vw 4.115vw 2.917vw 4.323vw
+	box-sizing: border-box
+.contact-title
+	padding-top: 7vw
+	padding-bottom: 2.865vw
+	font-size: 3.125vw
+	font-weight: 700
+	color: $yellow
+.contact-text
+	font-size: 1.042vw
+	margin-bottom: 2.552vw
+.contact-item
+	display: flex
+	align-items: center
+	margin-bottom: 2.083vw
+.contact-item__img-wrapper
+	width: 4.427vw
+.contact-item__img 
+	max-width: 2.083vw
+
+.contact-item__text
+	font-size: 1.563vw
+	font-weight: 700
+	line-height: 1.2
+	color: #fff
+.contact-item--adress .contact-item__text 
+	font-size: 1.042vw
+.input-wrapper 
+	width: 100%
+	margin-bottom: 3.646vw
+.form-row
+	display: flex
+	justify-content: space-between
+	.input-wrapper 
+		width: 47%
+
+.input,
+.textarea 
+	width: 100%
+	border: 1px solid rgba(255, 255, 255, 0.9)
+	background: transparent
+	border-radius: 0.260vw
+	outline: none
+	color: #fff
+	padding: 0 2vw
+	box-sizing: border-box
+	font-size: 1.5vw
+.input 
+	height: 5vw
+.textarea 
+	height: 9.583vw
+	padding: 1vw 2vw
+.label 
+	font-size: 1.042vw
+	font-weight: 700
+	margin-bottom: 0.573vw
+	display: block
+.contact-form__footer
+	display: flex
+	justify-content: center
+.submit-button
+	color: #000
+	border: none
+	outline: none
+	cursor: pointer
+//end contact style
+
+//star product-info style
+
+.product-info 
+	padding-top: 11.979vw
+	color: #fff
+	font-size: 0.833vw
+	.container 
+		display: flex 
+		justify-content: space-between
+.product-info__table-wrapper
+	background: rgba(48, 48, 48, 0.5)
+	border: 1px solid #A0A0A0
+	box-sizing: border-box
+	border-radius: 1.042vw
+	width: 58.906vw
+	min-height: 41.146vw
+	padding: 2.292vw 1.406vw 2.604vw 2.604vw
+	p 
+		margin-bottom: 1.667vw
+.application-button
+	background: $yellow
+	font-weight: 700
+	color: #000
+	text-transform: capitalize
+	padding: 0.78vw 1.5vw
+	border-radius: 5.208vw
+	margin-bottom: 1.979vw
+	display: inline-block
+.product-info__row
+	display: flex
+	justify-content: space-between
+.product-info__col
+	width: 12.552vw
+	margin-right: 1.094vw
+.product-characteristics__button
+	display: flex
+	align-items: center
+	justify-content: space-between
+	border: 1px solid #fff
+	font-size: 0.729vw
+	padding: 0.469vw 0.625vw
+	border-radius: 5vw
+//end product-info style
 
 @import "media"
 
