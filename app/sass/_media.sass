@@ -99,6 +99,81 @@
 		font-size: 1.8vw
 	.logo img
 		width: 10vw
+	.slider-wrapper
+		position: static
+		margin-top: 5vw
+		width: 100vw
+	.products 
+		padding-bottom: 0
+		.h1 
+			br 
+				display: none
+	.slider-wrapper,
+	.slider,
+	.slick-list,
+	.slick-track,
+	.slick-slide,
+	.slider-item
+		min-height: auto
+	.product-card
+		min-height: auto
+	.slide-arrows
+		display: none
+	.slick-dots
+		display: flex
+		justify-content: center
+		width: 100%
+		transform: translateY(-10vw)
+		button 
+			font-size: 0
+			width: 2.5vw
+			height: 2.5vw 
+			background: transparent 
+			border: 1px solid $yellow
+			border-radius: 50%
+			margin: 0 1vw
+			padding: 0
+		.slick-active
+			button 
+				background: $yellow
+
+	.slider-item
+		border: none
+	.product-image
+		max-width: 90vw
+		width: 50vw
+	.product-card
+		padding-bottom: 20vw
+	.slider-title
+		font-size: 5.5vw
+	.buttons-group
+		top: 5vw
+	.slider-button
+		width: 30vw
+		height: 6vw
+		font-size: 2.2vw
+		margin-bottom: 5vw
+	.buttons-group
+		left: -50vw
+	.slider-sub-title
+		font-size: 4vw
+	.product-card.active
+		.product-image
+			width: 50vw
+			transform: translateX(40vw)
+		
+		.buttons-group 
+			left: 15vw
+	.products .next-page
+		width: 8vw
+		height: 8vw
+	.products .prev-page
+		width: 5vw
+		height: 5vw
+	
+
+
+
 
 
 
@@ -246,6 +321,16 @@
 		margin-top: 10vw
 	.page-count
 		margin-top: 10vw
+	.products .next-page
+		width: 12vw
+		height: 12vw
+	.products .prev-page
+		width: 8vw
+		height: 8vw
+	.slider-button
+		font-size: 3vw
+		width: 33vw
+		height: 8vw
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

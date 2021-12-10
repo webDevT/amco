@@ -4,12 +4,17 @@
 //start global style
 body
 	min-height: 100vh
-	background: url('../img/bg.png')
-	background-size: cover
+	background: url('../img/bg.png')	
 	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
 	font-family: $campton
 	font-weight: 500
 	box-sizing: border-box
+	margin: 0
+
+	//overflow: hidden
+	//max-height: 100vh
 .container 
 	width: 89.219vw
 	margin: 0 auto
@@ -116,6 +121,9 @@ a:hover
 	font-family: $campton
 	span 
 		font-weight: 300
+	.yellow 
+		font-weight: 500
+		color: $yellow
 .button
 	background: linear-gradient(89.8deg, #D98B00 0.12%, #FFA400 101.39%)
 	box-shadow: 0px 1.563vw 2.604vw 0.104vw rgba(255, 164, 0, 0.3)
@@ -338,6 +346,134 @@ ul
 	padding: 0.469vw 0.625vw
 	border-radius: 5vw
 //end product-info style
+
+.view-all__link
+	color: $yellow
+	letter-spacing: 0.285em
+	margin-top: 1vw
+	font-weight: 500
+	display: block
+.products 
+	padding-top: 20vw
+	.h1 
+		font-weight: 600
+		.yellow 
+			font-weight: 600
+	.prev-page
+		width: 2.135vw
+		height: 2.135vw
+	.next-page
+		width: 2.969vw
+		height: 2.969vw
+.page-navigation
+	padding-top: 3vw
+.slider-item
+	
+	border: 1px solid #454545
+	box-sizing: border-box	
+	box-sizing: border-box
+.slider 
+	min-height: 100vh
+.slick-list,
+.slick-track,
+.slick-slide,
+.slider-item
+
+	min-height: 100vh
+.product-card
+	width: 100%
+	min-height: 90.5vh
+	display: flex
+	align-items: center
+	flex-direction: column
+	cursor: pointer
+	padding-top: 8vw
+
+
+.slider-wrapper 
+	position: absolute 
+	right: 0
+	top: 0
+	width: 66vw
+	backdrop-filter: blur(0.3vw)
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.402) 0%, rgba(77, 77, 77, 0.294) 100%)
+	min-height: 100%
+.slide-arrows
+	display: flex
+	align-items: center
+	position: absolute
+	bottom: 3.646vw
+	right: 5.208vw
+.prev-slide
+	margin-right: 1.615vw
+	cursor: pointer
+.next-slide 
+	cursor: pointer
+.slider-title
+	font-size: 2.083vw
+	font-weight: 600
+	text-transform: uppercase
+.slider-header
+	text-align: center
+	margin-bottom: 2vw	
+.product-image
+	max-width: 23.177vw
+.product-card
+	overflow: hidden
+	transition: all 1s
+	.slider-title,
+	.product-image
+		transition: all 1s
+.slider-sub-title
+	font-weight: 600
+	font-size: 1.823vw
+	opacity: 0
+	transition: all 1s
+.buttons-group
+	align-self: flex-start
+	position: absolute
+	left: -25vw
+	transition: all 1s
+	top: 2.5vw
+	padding-left: 2.240vw
+.slider-button
+	display: block
+	width: 11.563vw
+	height: 2.604vw
+	box-shadow: 0px 0px 16px 4px rgba(239, 162, 32, 0.46)
+	border-radius: 100px
+	background: #FFA401
+	display: flex 
+	justify-content: center
+	align-items: center
+	margin-bottom: 1.458vw
+	font-size: 0.833vw
+	color: #000
+	font-weight: 600
+
+.product-card__content
+	position: relative
+	width: 100%
+//start products card active
+.product-card.active 
+
+	background: url('../img/pc-bg.png')
+	background-size: cover 
+	background-repeat: no-repeat
+
+	.slider-title
+		color: $yellow
+	.product-image
+		width: 19.531vw
+		transform: translateX(12vw)
+	.slider-sub-title
+		opacity: 1
+	.buttons-group
+		left: 0
+		
+		
+
+//end products card active
 
 @import "media"
 
